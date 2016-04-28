@@ -21,7 +21,7 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
        if(!isMatch){
          return done(null, false); //did not match
        }
-       return done(null, true);
+       return done(null, user);
      })
 
 
